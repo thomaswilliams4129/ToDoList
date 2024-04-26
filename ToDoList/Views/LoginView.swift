@@ -8,39 +8,40 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
                 //  Header
-                HeaderView()
+                HeaderView(background: .pink, title: "To Do List", subTitle: "Get things done", angle: 15)
+
                 
                 Spacer()
                 
-                // Login Form
                 
+                
+                // Login Form
                 Form {
-                    TextField("Email Address", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    SecureField("Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    
-                    Button {
-                        // login
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            
-                            Text("Log In")
-                                .foregroundColor(.white)
-                                .bold()
-                        }
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
                     }
+                    
+                    TextField("Email Address", text: $viewModel.email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                    
+                    SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
+                    TLButton(title: "Log In", background: .blue) {
+                        viewModel.login()
+                    }
+                    .padding()
                 }
-                .frame(height: 300)
+                .offset(y: -50)
                 
                 VStack {
                     // Create Account
