@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State private var viewModel = RegisterViewViewModel()
+    @StateObject var viewModel = RegisterViewViewModel()
     
     var body: some View {
         VStack {

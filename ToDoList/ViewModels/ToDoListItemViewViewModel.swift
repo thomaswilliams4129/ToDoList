@@ -6,3 +6,8 @@
 //
 
 import Foundation
+/// ViewModel for a single to do list item (each item in row)
+class ToDoListItemViewViewModel: ObservableObject {
+    
+    init() { }
+}
