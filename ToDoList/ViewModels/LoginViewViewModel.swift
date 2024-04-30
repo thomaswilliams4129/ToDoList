@@ -7,6 +7,7 @@
 
 import FirebaseAuth
 import Foundation
+import SwiftUI
 
 class LoginViewViewModel: ObservableObject {
     @Published var email = ""
