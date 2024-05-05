@@ -30,6 +30,7 @@
 		8268A1482BDB02920064FDCF /* NewItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268A1472BDB02920064FDCF /* NewItemViewViewModel.swift */; };
 		8268A14A2BDB029E0064FDCF /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268A1492BDB029E0064FDCF /* ProfileViewViewModel.swift */; };
 		8268A14C2BDB22350064FDCF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268A14B2BDB22350064FDCF /* HeaderView.swift */; };
+		8269C7442BE67B6F00C58784 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8269C7432BE67B6F00C58784 /* Launch Screen.storyboard */; };
 		828908FC2BDC37A200CD8259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 828908FB2BDC37A200CD8259 /* GoogleService-Info.plist */; };
 		82ADA3342BDC03E9008A6303 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ADA3332BDC03E9008A6303 /* TLButton.swift */; };
 		82ADA3362BDC1903008A6303 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ADA3352BDC1903008A6303 /* Extenstions.swift */; };
@@ -57,6 +58,7 @@
 		8268A1472BDB02920064FDCF /* NewItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewViewModel.swift; sourceTree = "<group>"; };
 		8268A1492BDB029E0064FDCF /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		8268A14B2BDB22350064FDCF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8269C7432BE67B6F00C58784 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		828908FB2BDC37A200CD8259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82ADA3332BDC03E9008A6303 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		82ADA3352BDC1903008A6303 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				8268A1122BDAFE5E0064FDCF /* ToDoListApp.swift */,
 				828908FB2BDC37A200CD8259 /* GoogleService-Info.plist */,
+				8269C7432BE67B6F00C58784 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				8268A11A2BDAFE5F0064FDCF /* Preview Assets.xcassets in Resources */,
 				8268A1172BDAFE5F0064FDCF /* Assets.xcassets in Resources */,
+				8269C7442BE67B6F00C58784 /* Launch Screen.storyboard in Resources */,
 				828908FC2BDC37A200CD8259 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +405,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -431,6 +436,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
